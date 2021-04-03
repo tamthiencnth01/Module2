@@ -1,2 +1,6 @@
-package PACKAGE_NAME;public class Animal {
-}
+//public class Animal {
+//    public static void main(String[] args) {
+//        Animal cat = new Animal();
+//        int
+//    }
+//}
