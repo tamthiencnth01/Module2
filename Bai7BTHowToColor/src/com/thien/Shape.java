@@ -1,5 +1,7 @@
-public class Shape {
-    private String color ="green";
+package com.thien;
+
+public abstract class Shape implements Colorable{
+    private String color = "red";
     private boolean filled = true;
 
     public Shape() {
@@ -26,9 +28,23 @@ public class Shape {
         this.filled = filled;
     }
 
+
+
     @Override
     public String toString() {
         return "Shape{" +
-                "color='" + color + (isFilled() ? "filled" : "not filled");
+                "color='" + color + '\'' +
+                (isFilled()?"filled":"not filled") +
+                '}';
+    }
+    public static void printShape(Shape[] shape) {
+        for (Shape x : shape) {
+            System.out.println(x.toString());
+        }
+    }
+
+    @Override
+    public void howToColor() {
+
     }
 }

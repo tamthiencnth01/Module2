@@ -1,5 +1,7 @@
-public class Shape {
-    private String color ="green";
+package com.thien;
+
+public abstract class Shape implements Resizeable{
+    private String color = "red";
     private boolean filled = true;
 
     public Shape() {
@@ -27,8 +29,20 @@ public class Shape {
     }
 
     @Override
+    public void resize(double percent) {
+
+    }
+
+    @Override
     public String toString() {
         return "Shape{" +
-                "color='" + color + (isFilled() ? "filled" : "not filled");
+                "color='" + color + '\'' +
+                (isFilled()?"filled":"not filled") +
+                '}';
+    }
+    public static void printShape(Shape[] shape) {
+        for (Shape x : shape) {
+            System.out.println(x.toString());
+        }
     }
 }

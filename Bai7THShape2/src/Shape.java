@@ -1,6 +1,6 @@
 public class Shape {
-    private String color ="green";
-    private boolean filled = true;
+    private String color = "red";
+    private boolean filled  = true;
 
     public Shape() {
     }
@@ -25,10 +25,11 @@ public class Shape {
     public void setFilled(boolean filled) {
         this.filled = filled;
     }
-
     @Override
     public String toString() {
         return "Shape{" +
-                "color='" + color + (isFilled() ? "filled" : "not filled");
+                "color='" + color + '\'' +
+                ", filled=" + filled +
+                '}';
     }
 }

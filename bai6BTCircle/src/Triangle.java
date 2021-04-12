@@ -1,10 +1,17 @@
-public class Triangle {
+public class Triangle extends Shape{
     private double side1, side2, side3;
 
     public Triangle() {
     }
 
     public Triangle(double side1, double side2, double side3) {
+        this.side1 = side1;
+        this.side2 = side2;
+        this.side3 = side3;
+    }
+
+    public Triangle(String color, boolean filled, double side1, double side2, double side3) {
+        super(color, filled);
         this.side1 = side1;
         this.side2 = side2;
         this.side3 = side3;
@@ -34,11 +41,12 @@ public class Triangle {
         this.side3 = side3;
     }
     public double getPerimeter(){
-        double perimeter =  this.side1*this.side2*this.side3;
+        double perimeter =  (this.side1*this.side2*this.side3)/2;
         return perimeter;
     }
     public double getArea(){
-        double area =  Math.PI(getPerimeter()*(getPerimeter()-this.side1)*(getPerimeter()-this.side2)*(getPerimeter()-this.side3);
+        double perimeter =  (this.side1*this.side2*this.side3)/2;
+        double area =  Math.sqrt(perimeter*(perimeter-this.side1)*(perimeter-this.side2)*(perimeter-this.side3));
         return area;
     }
 }

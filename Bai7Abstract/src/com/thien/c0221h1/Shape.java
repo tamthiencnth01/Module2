@@ -1,6 +1,8 @@
-public class Shape {
-    private String color ="green";
-    private boolean filled = true;
+package com.thien.c0221h1;
+
+public abstract class Shape {
+    protected String color = "red";
+    protected boolean filled = true;
 
     public Shape() {
     }
@@ -25,10 +27,14 @@ public class Shape {
     public void setFilled(boolean filled) {
         this.filled = filled;
     }
+    public abstract double getArea();
+    public abstract double getPerimeter();
 
     @Override
     public String toString() {
         return "Shape{" +
-                "color='" + color + (isFilled() ? "filled" : "not filled");
+                "color='" + color + '\'' +
+                ", filled=" + filled +
+                '}';
     }
 }
