@@ -40,17 +40,20 @@ public class BST {
     //Phương thức hiển thị
     void inorderRec(Node root) {
         if (root != null) {
+
             inorderRec(root.left);
-            System.out.println(root.data);
+
             inorderRec(root.right);
+            System.out.println(root.data);
         }
     }
     void inorder() {
+        System.out.println("root: "+root.data);
         inorderRec(root);
     }
 
     public static void main(String[] args) {
-        BSTPrint bst = new BSTPrint();
+        BST bst = new BST();
         bst.insert(50);
         bst.insert(30);
         bst.insert(20);

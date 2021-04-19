@@ -10,10 +10,10 @@ public class Example4 {
         //Use HashMap
         Map<String, Integer> hashMap = new HashMap<>();
         //Lưu trữ ngẫu nhiên, không thể sắp xếp
-        hashMap.put("Anderson", 31);
-        hashMap.put("Smith", 30);
-        hashMap.put("Lewis", 29);
-        hashMap.put("Cook", 29);
+        hashMap.put("Anderson", 1);
+        hashMap.put("Smith", 4);
+        hashMap.put("Lewis", 3);
+        hashMap.put("Cook", 8);
         System.out.println("Display entries in HashMap");
         System.out.println(hashMap + "\n");
         //Use TreeMap

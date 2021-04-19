@@ -9,7 +9,7 @@ public class Example2 {
         // init map
         HashMap map = new HashMap();
         // add elements to map
-        map.put("a5a", "Java");
+        map.put("5abc", "Java");
 
         map.put(3, "C++");
         map.put(2, "PHP");

@@ -19,18 +19,22 @@ public class Example5 {
     }
     public static void testMap(Map<Integer, String> test){
         test.put(11,"Duong");
-        test.put(51,"Khanh");
-        test.put(65,"Chuong");
-        test.put(72,"Quang");
-        test.put(101,"Long");
-        test.put(44,"Han");
-        test.put(32,"Huy");
-        test.put(91,"Binh");
+        test.put(65,"Khanh");
+        test.put(65,null);
+        test.put(23,"Quang");
+        test.put(43,"Long");
+        test.put(44,null);
+        test.put(32,"Han");
+        test.put(91,null);
         test.put(20,"Nam");
         for (Integer key:
              test.keySet()) {
             String value = test.get(key);
             System.out.println(key+"----------"+value);
+        }
+        for (Map.Entry<Integer, String> entry :
+                test.entrySet()) {
+            System.out.println(entry.getKey()+"*************"+entry.getValue());
         }
     }
 }

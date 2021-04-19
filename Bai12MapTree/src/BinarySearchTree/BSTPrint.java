@@ -26,10 +26,11 @@ public class BSTPrint {
         }
         //Xét 2 trường hợp
         if(key<root.data){
-            root.left = new Node(key);
+            root.left = insertRec(root.left,key);
+
         }
         if (key> root.data){
-            root.right = new Node(key);
+            root.right = insertRec(root.right,key);
         }
         return root;
     }
@@ -54,10 +55,10 @@ public class BSTPrint {
         bst.insert(50);
         bst.insert(60);
         bst.insert(20);
-//        bst.insert(40);
-//        bst.insert(70);
-//        bst.insert(60);
-//        bst.insert(80);
+        bst.insert(40);
+        bst.insert(70);
+        bst.insert(60);
+        bst.insert(80);
         bst.inorder();
         System.out.println("******");
     }
