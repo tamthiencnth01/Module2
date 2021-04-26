@@ -42,9 +42,9 @@ public class BST {
         if (root != null) {
 
             inorderRec(root.left);
-
-            inorderRec(root.right);
             System.out.println(root.data);
+            inorderRec(root.right);
+
         }
     }
     void inorder() {
