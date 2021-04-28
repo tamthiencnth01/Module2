@@ -15,6 +15,9 @@ public class ReaderTest {
                 String field[] = line.split(",");
                 System.out.println("Ip Started: "+field[0]+"Ip End"+field[1]+"start code "+field[2]+"end code "+field[3]+"viet tat"+field[4]+"country "+ field[5]);
             }
+//            while ((line = br.readLine()) != null){
+//                System.out.println(line);
+//            }
         }catch (IOException e){
             e.printStackTrace();
         }
